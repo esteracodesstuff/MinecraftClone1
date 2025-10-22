@@ -1,0 +1,10 @@
+^C:\USERS\ARUSIECKI\MINECRAFTCLONE1\BUILD\CMAKEFILES\DA996E10B6BA2BC8B453C5A42DBD20B8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/arusiecki/MinecraftClone1 -BC:/Users/arusiecki/MinecraftClone1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/arusiecki/MinecraftClone1/build/MinecraftClone.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
